@@ -17,7 +17,7 @@
 
 int main()
 {
-	int gd = DETECT, gm;
+	int gd = DETECT, gm, saveX;
 	
 	initgraph(&gd, &gm, NULL);
 	int patrat[] = {200,100, 300,100, 300,200, 200,200, 200,100};
@@ -33,8 +33,9 @@ int main()
 	/* rotatia */
 	outtextxy(RX, RY, "P");
 	for (int i = 0; i < 10; i+=2) {
+		saveX = patrat[i];
 		patrat[i] = (patrat[i] - RX) * cos(ANGLE) - (patrat[i+1] - RY) * sin(ANGLE);
-		patrat[i+1] = (patrat[i] - RX) * sin(ANGLE) + (patrat[i+1] - RY) * cos(ANGLE);
+		patrat[i+1] = (saveX - RX) * sin(ANGLE) + (patrat[i+1] - RY) * cos(ANGLE);
 	}
 
 	/* scalarea */

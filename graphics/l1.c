@@ -24,7 +24,7 @@ void save()
 void load()
 {
 	int i, j;
-	char *buf;
+	char buf[10];
 	FILE *f = fopen("save.txt", "r");
 	for (i = 0; i < 640; i++)
 	{

@@ -11,7 +11,7 @@
 int main()
 {
 	int gd = DETECT, gm;
-	float ANGLE = 360/10 * M_PI/180;
+	float ANGLE = 360/15 * M_PI/180;
 	
 	initgraph(&gd, &gm, NULL);
 	int cx = getmaxx() / 2;
@@ -22,7 +22,7 @@ int main()
 	setcolor(G);
 	
 	int n, i, save;
-	for (n = 0; n < 10; n++)
+	for (n = 0; n < 15; n++)
 	{
 		drawpoly(5, p);
 		for (i = 0; i < 9; i+=2)
