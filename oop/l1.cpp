@@ -9,10 +9,11 @@ using namespace std;
 
 class Person
 {
-	public:
+	private:
 		string	fname, lname, address, phone;
 		int		age;
 
+	public:
 		// Constructor
 		Person ()
 		{
@@ -32,6 +33,23 @@ class Person
 		~Person()
 		{
 			cout << "Deleted " << fname << endl;
+		}
+
+		// Getters
+		string get_fname() {
+			return fname;
+		}
+		string get_lname() {
+			return lname;
+		}
+		string get_address() {
+			return address;
+		}
+		string get_phone() {
+			return phone;
+		}
+		int get_age() {
+			return age;
 		}
 		
 		void print()
@@ -118,7 +136,7 @@ int main()
 						string query;
 						cin >> query;
 						for (int i = 0; i < person_count; i++) {
-							if (query == persons[i]->fname) {
+							if (query == persons[i]->get_fname()) {
 								persons[i]->print();
 								break;
 							}
@@ -131,7 +149,7 @@ int main()
 						string query;
 						cin >> query;
 						for (int i = 0; i < person_count; i++) {
-							if (query == persons[i]->lname) {
+							if (query == persons[i]->get_lname()) {
 								persons[i]->print();
 								break;
 							}
@@ -144,7 +162,7 @@ int main()
 						string query;
 						cin >> query;
 						for (int i = 0; i < person_count; i++) {
-							if (query == persons[i]->address) {
+							if (query == persons[i]->get_address()) {
 								persons[i]->print();
 								break;
 							}
@@ -157,7 +175,7 @@ int main()
 							int age;
 							cin >> age;
 							for (int i = 0; i < person_count; i++) {
-								if (age == persons[i]->age) {
+								if (age == persons[i]->get_age()) {
 									persons[i]->print();
 									break;
 								}
@@ -170,7 +188,7 @@ int main()
 						string query;
 						cin >> query;
 						for (int i = 0; i < person_count; i++) {
-							if (query == persons[i]->phone) {
+							if (query == persons[i]->get_phone()) {
 								persons[i]->print();
 								break;
 							}
