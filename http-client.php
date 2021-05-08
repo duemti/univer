@@ -52,12 +52,23 @@ function	handle(string $url, string $method, string $json)
 
 /** METHODS  ************************************************/
 function	get(Client $client, array $resource, string $json) {
-	$uri = $resource['path'] . "?" . $resource['query'];
-	return $client->get($uri, ['http_errors' => false]);
+	$uri = (isset($resource['path'])) ? $resource['path'] : "/";
+	if (isset($resource['query']))
+		$uti .= "?" . $resource['query'];
+	if (isset($resource['fragment']))
+		$uti .= "#" . $resource['fragment'];
+
+	return $client->get($uri, [
+		'proxy' => [
+			'http' => 'https://hide.me/en/proxy',
+			//'https' => 'https://hidester.com/proxy',
+		],
+		'http_errors' => false
+	]);
 }
 
 function	post(Client $client, array $resource, string $json) {
-	$uri = $resource['path'];
+	$uri = (isset($resource['path'])) ? $resource['path'] : "/";
 
 	return $client->request(
 		'POST',
@@ -71,12 +82,16 @@ function	post(Client $client, array $resource, string $json) {
 }
 
 function	head(Client $client, array $resource, string $json) {
-	$uri = $resource['path'] . "?" . $resource['query'];
+	$uri = (isset($resource['path'])) ? $resource['path'] : "/";
+	if (isset($resource['query']))
+		$uti .= "?" . $resource['query'];
 	return $client->head($uri, ['http_errors' => false]);
 }
 
 function	options(Client $client, array $resource, string $json) {
-	$uri = $resource['path'] . "?" . $resource['query'];
+	$uri = (isset($resource['path'])) ? $resource['path'] : "/";
+	if (isset($resource['query']))
+		$uti .= "?" . $resource['query'];
 	return $client->options($uri, ['http_errors' => false]);
 }
 
