@@ -34,10 +34,8 @@ if (isset($_POST['email']) && isset($_POST['msg']))
 	$msg = wordwrap($msg,70);
 
 	// Headers
-	$headers = array(
-		'From' => $_SESSION['email'],
-		'X-Mailer' => 'PHP/' . phpversion()
-	);
+	$headers = 'From: ' . $_SESSION['email'] . "\r\n" .
+		'X-Mailer: PHP/' . phpversion();
 
 	// send email
 	if (true === mail($recepient, $subject, $msg, $headers))
