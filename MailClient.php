@@ -61,6 +61,7 @@ class MailClient
 			imap_close($this->connection);
 	}
 
+
 	/**
 	 * Return an array of IMAP messages for pagination
 	 */
@@ -108,7 +109,19 @@ class MailClient
 			return false;
 
 		// Sorting
+		if(true === is_array($sorted)) {
+			$tmp_result = array();
+			foreach($result as $r)
+				$tmp_result[$r->msgno] = $r;
+
+			$result = array();
+			foreach($msgs as $msgno) {
+				$result[] = $tmp_result[$msgno];
+			}
+		}
+
 		$return = array(
+			'per-page' => $per_page,
 			'res' => $result,
 			'start' => $start,
 			'limit' => $limit,
@@ -137,4 +150,11 @@ class MailClient
 		return $folders;
 	}
 
+	/**
+	 * Return a mail by mail id.
+	 */
+	public function	get_mail(int $id)
+	{
+		return imap_qprint(imap_body($this->connection, $id));
+	}
 }
