@@ -1,7 +1,7 @@
 {
 	"autoload": {
 		"psr-4": {
-			"DesignPatterns\\FactoryMethod\\": "./",
+			"DesignPatterns\\FactoryMethod\\": "factory-method/",
 			"DesignPatterns\\FactoryMethod\\Tests\\": "tests/"
 		}
 	},
