@@ -1,12 +1,11 @@
-<?PHP
-declare(strict_types = 1);
+<?PHP declare(strict_types = 1);
 
 namespace DesignPatterns\FactoryMethod;
 
 /**
  * This is a concrete product.
  */
-class StdouLogger implements Logger
+class StdoutLogger implements Logger
 {
 	public function	log(string $message)
 	{

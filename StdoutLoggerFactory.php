@@ -1,5 +1,4 @@
-<?PHP
-declare(strict_types = 1);
+<?PHP declare(strict_types = 1);
 
 namespace DesignPatterns\FactoryMethod;
 
@@ -9,7 +8,7 @@ namespace DesignPatterns\FactoryMethod;
  */
 class StdoutLoggerFactory implements LoggerFactory
 {
-	public function	createLogger()
+	public function	createLogger(): Logger
 	{
 		return new StdoutLogger();
 	}

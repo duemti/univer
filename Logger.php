@@ -1,10 +1,4 @@
-<?PHP
-/**
- * Design Patterns: Factory Method
- *
- * by: Petrov Dumitru
- */
-declare(strict_types = 1);
+<?PHP declare(strict_types = 1);
 
 namespace DesignPatterns\FactoryMethod;
 

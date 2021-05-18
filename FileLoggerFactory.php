@@ -1,5 +1,4 @@
-<?PHP
-declare(strict_types = 1);
+<?PHP declare(strict_types = 1);
 
 namespace DesignPatterns\FactoryMethod;
 
@@ -9,11 +8,14 @@ namespace DesignPatterns\FactoryMethod;
  */
 class FileLoggerFactory implements LoggerFactory
 {
-	public function	__construct(private string $filePath)
+	private $filePath;
+
+	public function	__construct(string $filePath)
 	{
+		$this->filePath = $filePath;
 	}
 
-	public function	createLogger()
+	public function	createLogger(): Logger
 	{
 		return new FileLogger($this->filePath);
 	}

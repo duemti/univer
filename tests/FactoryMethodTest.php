@@ -1,5 +1,4 @@
-<?PHP
-declare(strict_types = 1);
+<?PHP declare(strict_types = 1);
 
 namespace DesignPatterns\FactoryMethod\Tests;
 
@@ -11,9 +10,9 @@ use PHPUnit\Framework\TestCase;
 
 class FactoryMethodTest extends TestCase
 {
-	public function TestCanCreateStdoutLogging()
+	public function testCanCreateStdoutLogging()
 	{
-		$loggerFactory = new StdoutLoggerFactory;
+		$loggerFactory = new StdoutLoggerFactory();
 		$logger = $loggerFactory->createLogger();
 
 		$this->assertInstanceOf(StdoutLogger::class, $logger);
@@ -21,7 +20,7 @@ class FactoryMethodTest extends TestCase
 
 	public function	testCanCreateFileLogging()
 	{
-		$loggerFactory = new FileLoggerFactory();
+		$loggerFactory = new FileLoggerFactory(sys_get_temp_dir());
 		$logger = $loggerFactory->createLogger();
 
 		$this->assertInstanceOf(FileLogger::class, $logger);

@@ -1,0 +1,11 @@
+{
+	"autoload": {
+		"psr-4": {
+			"DesignPatterns\\FactoryMethod\\": "./",
+			"DesignPatterns\\FactoryMethod\\Tests\\": "tests/"
+		}
+	},
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    }
+}
