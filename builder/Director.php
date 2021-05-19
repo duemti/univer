@@ -2,6 +2,8 @@
 
 namespace DesignPatterns\Builder;
 
+use DesignPatterns\Builder\Parts\Vehicle;
+
 /**
  * Director is part of the builder pattern. It knows the interface of the builder
  * and builds a complex object with the help of the builder

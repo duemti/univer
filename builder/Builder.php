@@ -2,6 +2,8 @@
 
 namespace DesignPatterns\Builder;
 
+use DesignPatterns\Builder\Parts\Vehicle;
+
 /**
  * Builder interface.
  * declares instruction steps.

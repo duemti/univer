@@ -6,7 +6,7 @@
 			"DesignPatterns\\AbstractFactory\\": "abstract-factory/",
 			"DesignPatterns\\AbstractFactory\\Tests\\": "abstract-factory-tests/",
 			"DesignPatterns\\Builder\\": "builder/",
-			"DesignPatterns\\Builder\\Parts\\": "builder/parts",
+			"DesignPatterns\\Builder\\Parts\\": "builder/parts/",
 			"DesignPatterns\\Builder\\Tests\\": "builder-tests/"
 		}
 	},

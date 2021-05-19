@@ -1,10 +1,13 @@
 <?PHP declare(strict_types = 1);
 
 namespace DesignPatterns\Builder\Tests;
+require __DIR__ . '/../vendor/autoload.php';
 
 use DesignPatterns\Builder\Director;
 use DesignPatterns\Builder\CarBuilder;
 use DesignPatterns\Builder\TruckBuilder;
+use DesignPatterns\Builder\Parts\Car;
+use DesignPatterns\Builder\Parts\Truck;
 
 $director = new Director();
 $carBuilder = new CarBuilder();
