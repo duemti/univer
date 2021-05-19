@@ -2,7 +2,9 @@
 	"autoload": {
 		"psr-4": {
 			"DesignPatterns\\FactoryMethod\\": "factory-method/",
-			"DesignPatterns\\FactoryMethod\\Tests\\": "tests/"
+			"DesignPatterns\\FactoryMethod\\Tests\\": "factory-method-tests/",
+			"DesignPatterns\\AbstractFactory\\": "abstract-factory/",
+			"DesignPatterns\\AbstractFactory\\Tests\\": "abstract-factory-tests/"
 		}
 	},
     "require-dev": {
