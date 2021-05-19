@@ -7,7 +7,9 @@
 			"DesignPatterns\\AbstractFactory\\Tests\\": "abstract-factory-tests/",
 			"DesignPatterns\\Builder\\": "builder/",
 			"DesignPatterns\\Builder\\Parts\\": "builder/parts/",
-			"DesignPatterns\\Builder\\Tests\\": "builder-tests/"
+			"DesignPatterns\\Builder\\Tests\\": "builder-tests/",
+			"DesignPatterns\\Structural\\Adapter\\": "structural/adapter/",
+			"DesignPatterns\\Structural\\Adapter\\Tests\\": "structural/adapter/tests/"
 		}
 	},
     "require-dev": {
