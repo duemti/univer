@@ -10,7 +10,9 @@
 			"DesignPatterns\\Builder\\Tests\\": "builder-tests/",
 			"DesignPatterns\\Structural\\Adapter\\": "structural/adapter/",
 			"DesignPatterns\\Structural\\Bridge\\": "structural/bridge/",
-			"DesignPatterns\\Structural\\Bridge\\Tests\\": "structural/tests/"
+			"DesignPatterns\\Structural\\Bridge\\Tests\\": "structural/tests/",
+			"DesignPatterns\\Structural\\Facade\\": "structural/facade/",
+			"DesignPatterns\\Structural\\Facade\\Tests\\": "structural/tests/"
 		}
 	},
     "require-dev": {
