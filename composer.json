@@ -9,7 +9,8 @@
 			"DesignPatterns\\Builder\\Parts\\": "builder/parts/",
 			"DesignPatterns\\Builder\\Tests\\": "builder-tests/",
 			"DesignPatterns\\Structural\\Adapter\\": "structural/adapter/",
-			"DesignPatterns\\Structural\\Adapter\\Tests\\": "structural/adapter/tests/"
+			"DesignPatterns\\Structural\\Bridge\\": "structural/bridge/",
+			"DesignPatterns\\Structural\\Bridge\\Tests\\": "structural/tests/"
 		}
 	},
     "require-dev": {
