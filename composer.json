@@ -16,7 +16,9 @@
 			"DesignPatterns\\Behavioral\\ChainOfResponsibility\\": "behavioral/chain-of-responsibility/",
 			"DesignPatterns\\Behavioral\\ChainOfResponsibility\\Tests\\": "behavioral/tests/",
 			"DesignPatterns\\Behavioral\\Strategy\\": "behavioral/strategy/",
-			"DesignPatterns\\Behavioral\\Strategy\\Tests\\": "behavioral/tests/"
+			"DesignPatterns\\Behavioral\\Strategy\\Tests\\": "behavioral/tests/",
+			"DesignPatterns\\Behavioral\\State\\": "behavioral/state/",
+			"DesignPatterns\\Behavioral\\State\\Tests\\": "behavioral/tests/"
 		}
 	},
     "require-dev": {
