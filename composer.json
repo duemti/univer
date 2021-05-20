@@ -12,7 +12,9 @@
 			"DesignPatterns\\Structural\\Bridge\\": "structural/bridge/",
 			"DesignPatterns\\Structural\\Bridge\\Tests\\": "structural/tests/",
 			"DesignPatterns\\Structural\\Facade\\": "structural/facade/",
-			"DesignPatterns\\Structural\\Facade\\Tests\\": "structural/tests/"
+			"DesignPatterns\\Structural\\Facade\\Tests\\": "structural/tests/",
+			"DesignPatterns\\Behavioral\\ChainOfResponsibility\\": "behavioral/chain-of-responsibility/",
+			"DesignPatterns\\Behavioral\\ChainOfResponsibility\\Tests\\": "behavioral/tests/"
 		}
 	},
     "require-dev": {
